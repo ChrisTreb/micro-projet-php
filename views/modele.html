@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="fr">     
+	<head>         
+		<!-- déclaration encodage -->         
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">           
+		<!-- compatibilité IE anciennes versions -->         
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">         
+		<!-- affichage smartphone Apple échelle 1-->         
+		<meta name="viewport" content="width=device-width,initial-scale=1">         
+		<!-- emplacement pour le contenu de la balise title : essentiel pour le SEO -->         
+		<title>{#title#}</title>         
+		<!-- emplacement pour le contenu de la méta description. -->         
+		<meta content="{#description#}" name="description">         
+		<!-- chargement de la css -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+		<link href="css/style.css" rel="stylesheet" type="text/css" />                
+		<!-- chargement de la favicon -->         
+		<link href="images/favicon.jpg" rel="icon" /> 
+	
+		<!-- Spécial compatibilité avec IE inférieur à 9. Les balises HTML5 ne sont pas reconnues. Chargement d'un js qui les remplacent (https://github.com/aFarkas/html5shiv)-->         <!-- les medias queries ne fonctionnent pas. Il faut un fichier css spécifique -->         
+		<!--[if lte IE 9]>             
+		<script type="text/javascript" 
+		src="js/html5shiv.min.js"></script>             
+			<link rel="stylesheet" href="css/style_ie.css" type="text/css" media="screen">         
+		<![endif]-->     
+	</head> 
+ 
+	<body>         
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			{#menu#}
+		</nav>         
+		<section>             
+			{#content#}           
+		</section>
+
+		<footer>
+			{#footer#}
+		</footer>
+		<!-- chargement du javascript-->     
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body> 
+</html> 
