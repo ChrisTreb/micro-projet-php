@@ -7,7 +7,7 @@ $content='
         <div class="title">
             <h1>PHOTOGRAPHIE</h1>
             <h2 class="subtitle">LPDD - Passion image <i class="fa fa-heart"></i></h2>
-            <p><a href="https://github.com/ChrisTreb/microprojet-php-deust/archive/master.zip"><i class="fa fa-download"></i> Télécharger le projet</a></p>
+            <p><a href="https://github.com/ChrisTreb/micro-projet-php/archive/master.zip"><i class="fa fa-download"></i> Télécharger le projet</a></p>
         </div>
         <img class="image-accueil img-fluid d-block mx-auto" src="images/image-fond.jpg">
     </div>

@@ -46,6 +46,10 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
+ul {
+    margin-bottom: 0;
+}
+
 .row {
     margin: 0;
 }
@@ -97,7 +101,7 @@ p {
 }
 
 .image-accueil {
-    width: 30%;
+    width: 15%;
     border-radius: 50%;
     border: 5px solid white;
 }
@@ -113,12 +117,53 @@ p {
     list-style: none;
 }
 
+nav {
+    padding: 15px;
+    background-color: rgba(148, 148, 148, 0.1);
+    height: 80px;
+}
+
+nav > div {
+    display: inline-block;
+}
+
 .nav-item {
     margin: 10px;
 }
 
+.logo-site {
+    margin-top: 6px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5%;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.3rem;
+}
+
+.menu-logo {
+    margin: 10px 0;
+}
+
+.menu-liste-container {
+    margin-left: 15px;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 10px;
+}
+
+#bouton-menu {
+    display: none;
+    font-size: 25px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
 .active {
     font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
 }
 
 /*////// Formulaire ////////*/
@@ -182,6 +227,10 @@ form {
     display: none;
 }
 
+.fa-caret-down {
+    transform: scale(1.2) rotate(-90deg);
+}
+
 
 /*///////// Modal //////////*/
 
@@ -241,6 +290,36 @@ footer > div > div > p {
         display: none;
     }
 
+    .image-accueil {
+        width: 30%;
+    }
+
+    #bouton-menu {
+        display: block;
+    }
+
+    .btn:focus {
+        box-shadow: none;
+    }
+
+    .menu-liste-container {
+        display: none;
+        z-index: 99999999;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        padding: 25px;
+        background-color: white;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+        margin: 0;
+        height: 100vh;
+        font-size: 1.5rem;
+    }
+
+    .menu-item{
+        display: block;
+    }
+
     .media-query-home {
         display: block;
         height: 100vh;
@@ -266,6 +345,4 @@ footer > div > div > p {
     .bio {
         display: block;
     }
-    
-
  }

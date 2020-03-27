@@ -1,6 +1,6 @@
 <?php
 
-$title="Mes photographies préférés";
+$title="Ma sélection";
 
 $nom=array('Theo gosselin','Michel Hirsch','Rapahel Kriegel','Erwan Kéméré','Dominique Mayer');
 
@@ -29,8 +29,7 @@ foreach ($nom as $key => $value) :
 		<div class='card'>
 		<img class='card-img-top' src='images/".$photo[$key]."' alt='image' data-toggle='modal' data-target='#modal-".$key."'>
 			<div class='card-body'>
-				<p class='nom-artiste'>
-				<i class='fa fa-camera-retro'></i> <b>".$value."</b></p>
+				<p class='nom-artiste'><i class='fa fa-camera-retro'></i> <b>".$value."</b> <i class='fa fa-caret-down'></i></p>
 				<p class='card-text bio'>".$bio[$key]."</p>
 			</div>
 		</div>
