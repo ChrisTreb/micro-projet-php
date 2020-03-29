@@ -278,6 +278,17 @@ footer > div > div > p {
    margin: 10px;
 }
 
+/* Max-width 997px */
+@media only screen and (max-width: 997px) {
+    .image-accueil {
+        display: none;
+    }
+
+    .home-text {
+        display: none;
+    }
+}
+
 /* Media queries 768 px */
 
 @media only screen and (max-width: 768px) {
@@ -292,10 +303,6 @@ footer > div > div > p {
 
     .carousel {
         display: none;
-    }
-
-    .image-accueil {
-        width: 50%;
     }
 
     #bouton-menu {
@@ -322,10 +329,6 @@ footer > div > div > p {
 
     .menu-item{
         display: block;
-    }
-
-    .home-text {
-        display: none;
     }
 
     .media-query-home:before {
@@ -367,3 +370,4 @@ footer > div > div > p {
         margin: 20px 0 !important;
     }
  }
+
