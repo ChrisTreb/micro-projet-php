@@ -87,12 +87,14 @@ ul {
 
 .row-title > .col-md-12 {
     height: 90vh;
-    display: flex;
-    align-items: center;
+}
+
+.home-text {
+    padding-left: 2rem;
+    font-size: 1.3vw;
 }
 
 .title {
-    display: block;
     margin: auto;
     font-family: 'Permanent Marker', cursive;
     color: white;
@@ -101,9 +103,11 @@ ul {
 }
 
 .image-accueil {
-    width: 15%;
+    width: 50%;
     border-radius: 50%;
     border: 5px solid white;
+    display: block;
+    margin: auto;
 }
 
 .media-query-home {
@@ -235,7 +239,7 @@ form {
 /*///////// Modal //////////*/
 
 .modal-dialog {
-    max-width: 50vw;
+    max-width: 70vw;
 }
 
 /*//////// Footer //////////*/
@@ -291,7 +295,7 @@ footer > div > div > p {
     }
 
     .image-accueil {
-        width: 30%;
+        width: 50%;
     }
 
     #bouton-menu {
@@ -320,6 +324,19 @@ footer > div > div > p {
         display: block;
     }
 
+    .home-text {
+        display: none;
+    }
+
+    .media-query-home:before {
+        content:'\A';
+        position: absolute;
+        background: black;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+    }
+
     .media-query-home {
         display: block;
         height: 100vh;
@@ -334,15 +351,19 @@ footer > div > div > p {
         flex-direction: column;
     }
 
-    .title {
-        margin: 50px;
-    }
-
     .modal-dialog {
         max-width: 95vw;
     }
 
     .bio {
         display: block;
+    }
+
+    .users-posts {
+        margin: 0;
+    }
+
+    .list-group {
+        margin: 20px 0 !important;
     }
  }

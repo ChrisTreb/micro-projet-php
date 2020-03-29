@@ -25,7 +25,7 @@ $content='
 
 foreach ($nom as $key => $value) :
 	$content.="
-	<div class='col-xl-4 col-md-6'>
+	<div class='col-lg-6 col-md-12'>
 		<div class='card'>
 		<img class='card-img-top' src='images/".$photo[$key]."' alt='image' data-toggle='modal' data-target='#modal-".$key."'>
 			<div class='card-body'>
