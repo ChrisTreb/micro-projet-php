@@ -59,7 +59,7 @@ $content .= '
 
 		</form>
 	</div>
-	<div class="class="col-xl-4 col-md-1"></div>
+	<div class="col-xl-4 col-md-1"></div>
 </div>
 ';
 
