@@ -14,6 +14,7 @@ if(isset($_POST['delete'])) {
   $delete = $_POST['delete'];
   $sql = "DELETE FROM avis where id = '$delete'";
   $maBDD->insertion($sql);
+  header('location:4-tous-les-avis-photographie');
 }
 
 $title="Administration";
