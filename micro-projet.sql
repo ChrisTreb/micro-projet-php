@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  Dim 22 mars 2020 à 13:49
+-- Généré le :  sam. 11 avr. 2020 à 10:34
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.3.5
 
@@ -37,18 +37,20 @@ CREATE TABLE IF NOT EXISTS `avis` (
   `avatar` varchar(500) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `avis`
 --
 
 INSERT INTO `avis` (`id`, `nom`, `prenom`, `message`, `avatar`, `date`) VALUES
-(1, 'Doe', 'John', 'Superbes photos, beau travail l&#39;ami!', 'https://www.tekoway.com/wp-content/uploads/2018/12/John-Doe.jpg', '2020-03-21 14:56:58'),
-(2, 'Dylan', 'Bob', 'Nice!', 'https://www.rollingstone.fr/RS-WP-magazine/wp-content/uploads/2017/02/bob-dylan.jpg', '2020-03-21 17:54:29'),
-(3, 'Astier', 'Raoul', 'Trop naze tes images LOOOL, les vrais artistes c&#39;est les tunners de bagnoles!', 'https://media.gqmagazine.fr/photos/5b9913e5ee2d49001149942d/16:9/w_1920,c_limit/l___evolution_du_style_beauf_depuis_1940_1421.jpeg', '2020-03-21 15:40:20'),
-(4, 'Molloy', 'Kirstin ', 'Kinda weird...', 'images/user.png', '2020-03-21 14:56:58'),
-(5, 'Brazier', 'Ghislaine', 'Magnifique travail ;)', 'https://d.wattpad.com/story_parts/350857879/images/14940130e11b37c5178341257270.jpg', '2020-03-21 15:05:51');
+(1, 'Doe', 'John', 'Superbes photos, beau travail l&#39;ami!', 'https://www.tekoway.com/wp-content/uploads/2018/12/John-Doe.jpg', '2020-03-21 13:56:58'),
+(2, 'Dylan', 'Bob', 'Nice!', 'https://www.rollingstone.fr/RS-WP-magazine/wp-content/uploads/2017/02/bob-dylan.jpg', '2020-03-21 16:54:29'),
+(3, 'Face', 'Troll', 'Lololololololololo lololololOOOOO!', 'https://i.ebayimg.com/images/g/Dv0AAOSwl9BWL6v9/s-l300.jpg', '2020-03-26 12:44:05'),
+(4, 'Risitas', 'El', 'Hahaha hiihihi hoohoho!', 'https://image.noelshack.com/fichiers/2017/13/1490831623-serieu.png', '2020-03-26 12:45:05'),
+(5, 'Molloy', 'Kirstin ', 'Kinda weird...', 'images/user.png', '2020-03-21 13:56:58'),
+(6, 'Brazier', 'Ghislaine', 'Magnifique travail ;)', 'https://d.wattpad.com/story_parts/350857879/images/14940130e11b37c5178341257270.jpg', '2020-03-21 14:05:51'),
+(7, 'Chose', 'Machin', 'test', 'https://cdn-s-www.estrepublicain.fr/images/32EAFB03-E6A6-4F45-9115-ACE66663AF47/NW_detail_M/title-1576680650.jpg', '2020-03-26 13:15:00');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
